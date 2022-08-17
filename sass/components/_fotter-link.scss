@@ -1,0 +1,118 @@
+.fotter-links {
+  display: block;
+  width: 206px;
+  margin-left: 70px;
+}
+
+.fotter-strong {
+  margin-bottom: 20px;
+  border-bottom: 20px;
+  margin-top: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $primari-bg-color;
+}
+
+.fotter-links__list {
+  @extend %list;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.fotter-links__link {
+  @extend %centeredFlex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color $transition-time $transition-cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.fotter-links__svg {
+  @extend %list;
+
+  fill: $primari-bg-color;
+}
+
+.fotter-form {
+  position: relative;
+  margin-left: 93px;
+  display: block;
+  min-width: 570px;
+}
+
+.fotter-form__mail {
+  position: relative;
+}
+
+.fotter-form__input {
+  padding-left: 16px;
+
+  margin-top: 20px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #2f303a;
+  border-radius: 4px;
+  color: $primari-bg-color;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.fotter-form__label {
+  position: absolute;
+  bottom: 15px;
+  left: 16px;
+
+  .fotter-form__input:focus & {
+    color: $primari-bg-color;
+  }
+}
+
+.fotter-form__button {
+  position: relative;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-left: 12px;
+  min-width: 200px;
+  height: 50px;
+  border: solid transparent;
+  display: inline-block;
+  padding-right: 36px;
+
+  color: $primari-bg-color;
+  background-color: $accent-color;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    right: 10px;
+    content: "";
+    background-size: contain;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top: 2px;
+    margin-right: 18px;
+
+    background-image: url(../images/Icon.svg/icon\ send.svg);
+  }
+}

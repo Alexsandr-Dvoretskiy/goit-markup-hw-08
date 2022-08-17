@@ -1,0 +1,40 @@
+.fotter {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: #2f303a;
+}
+.fotter__container {
+  display: flex;
+  align-items: baseline;
+}
+.address {
+  display: inline-block;
+}
+
+.address-link {
+  display: inline-block;
+  margin-bottom: 9px;
+  margin-top: 20px;
+
+  color: $primari-bg-color;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+}
+.address__contacts {
+  display: inline-block;
+  margin-bottom: 9px;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+}
+.address__contacts--tel {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
