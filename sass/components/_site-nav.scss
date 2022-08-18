@@ -8,6 +8,10 @@
   line-height: 1.14;
 
   @media screen and (max-width: 767px) {
+    font-size: 40px;
+    margin-bottom: 302px;
+    margin-left: 40px;
+    margin-top: 48px;
   }
   @media screen and (min-width: 768px) {
     display: flex;
@@ -21,6 +25,9 @@
 
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
+}
+
+.site-nav__item {
 }
 
 .site-nav__link {
@@ -45,6 +52,12 @@
   @media screen and (min-width: 768px) {
     padding: 32px 0;
   }
+  @media screen and (max-width: 767px) {
+    font-size: 40px;
+    line-height: 1.17;
+
+    margin-bottom: 30px;
+  }
 }
 
 .site-nav__link--current {
@@ -66,5 +79,12 @@
 
   &:hover::after {
     opacity: 1;
+  }
+  @media screen and(max-width:767px) {
+  }
+  @media screen and(max-width:767px) {
+    &::after {
+      display: none;
+    }
   }
 }

@@ -14,10 +14,16 @@
   border: none;
   background-color: transparent;
 
-  &:focus {
+  &:focus,
+  &:hover {
     fill: $accent-color;
   }
+
+  @media screen and(min-width:767px) {
+    display: none;
+  }
 }
+
 .menu-button .icon-cross {
   display: none;
 }
@@ -25,18 +31,33 @@
 .menu-button.is-open .icon-cross {
   display: block;
 }
+
 .menu-button.is-open .icon-menu {
   display: none;
 }
+
 .menu-container {
+  position: relative;
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: tan;
+    background-color: #ffffff;
+    outline: 2px solid black;
+
+    height: 796px;
+
+    &.is-open {
+      display: block;
+    }
   }
+}
+.icon-menu {
+  position: absolute;
+  left: 0;
 }
