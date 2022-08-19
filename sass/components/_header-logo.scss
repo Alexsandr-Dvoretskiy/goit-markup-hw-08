@@ -11,7 +11,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    margin: 26px 0;
+    // margin: 26px 0;
     margin-right: auto;
   }
 
@@ -23,10 +23,16 @@
     margin: 0;
   }
 }
+
 .accent-logo {
   color: $title__text-color;
   font-family: "Raleway", sans-serif;
 }
+
 .accent-logo--color {
   color: #ffffff;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
 }

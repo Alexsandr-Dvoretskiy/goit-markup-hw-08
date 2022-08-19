@@ -2,6 +2,10 @@
   display: flex;
   @extend %list;
   justify-content: space-between;
+
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+  }
 }
 .socials-list__link {
   @extend %centeredFlex;
@@ -26,5 +30,11 @@
   .socials-list__link:hover &,
   .socials-list__link:focus & {
     fill: #ffffff;
+  }
+}
+
+.socials-item {
+  &:not(:last-child) {
+    margin-right: 10px;
   }
 }

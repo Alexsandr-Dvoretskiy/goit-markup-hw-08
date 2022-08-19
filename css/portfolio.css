@@ -108,7 +108,6 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .logo {
-    margin: 26px 0;
     margin-right: auto;
   }
 }
@@ -130,6 +129,11 @@ ul {
 
 .accent-logo--color {
   color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .accent-logo--color {
+    margin-bottom: 20px;
+  }
 }
 
 .navigation {
@@ -542,28 +546,50 @@ ul {
   background-color: #2f303a;
 }
 
-.fotter__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 768px) {
+  .fotter__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
-.address {
-  display: inline-block;
+@media screen and (max-width: 767px) {
+  .address {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .address {
+    margin-left: 76px;
+    text-align: center;
+  }
 }
 
 .address-link {
   display: inline-block;
   margin-bottom: 9px;
-  margin-top: 20px;
   color: #ffffff;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   text-decoration: none;
+}
+@media screen and (max-width: 767px) {
+  .address-link {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .address-link {
+    margin-top: 11px;
+  }
 }
 
 .address__contacts {
@@ -575,17 +601,45 @@ ul {
   line-height: 1.7;
   text-decoration: none;
 }
+@media screen and (max-width: 1199px) {
+  .address__contacts {
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .address__contacts {
+    margin-top: 0;
+  }
+}
 
 .address__contacts--tel {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
 }
+@media screen and (max-width: 1199px) {
+  .address__contacts--tel {
+    margin-top: 0;
+  }
+}
 
 .fotter-links {
   display: block;
   width: 206px;
   margin-left: 70px;
+}
+@media screen and (max-width: 767px) {
+  .fotter-links {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fotter-links {
+    margin-left: auto;
+    margin-right: 86px;
+  }
 }
 
 .fotter-strong {
@@ -600,6 +654,13 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (max-width: 1199px) {
+  .fotter-strong {
+    display: block;
+    text-align: center;
+    margin-bottom: 0;
+  }
 }
 
 .fotter-links__list {
@@ -628,11 +689,21 @@ ul {
   fill: #ffffff;
 }
 
-.fotter-form {
-  position: relative;
-  margin-left: 93px;
-  display: block;
-  min-width: 570px;
+@media screen and (min-width: 768px) {
+  .fotter-form {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fotter-form {
+    position: relative;
+    margin-left: 93px;
+    display: block;
+    min-width: 570px;
+  }
 }
 
 .fotter-form__mail {
@@ -642,13 +713,28 @@ ul {
 .fotter-form__input {
   padding-left: 16px;
   margin-top: 20px;
-  width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: #2f303a;
   border-radius: 4px;
   color: #ffffff;
   border-color: rgba(255, 255, 255, 0.3);
+}
+@media screen and (max-width: 767px) {
+  .fotter-form__input {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fotter-form__input {
+    width: 502px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fotter-form__input {
+    margin-top: 20px;
+    width: 358px;
+  }
 }
 
 .fotter-form__label {
@@ -694,4 +780,18 @@ ul {
   margin-top: 2px;
   margin-right: 18px;
   background-image: url(../images/Icon.svg/icon\ send.svg);
+}
+@media screen and (max-width: 767px) {
+  .fotter-form__button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fotter-form__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }/*# sourceMappingURL=portfolio.css.map */
