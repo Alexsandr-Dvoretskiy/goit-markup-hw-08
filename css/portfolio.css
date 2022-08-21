@@ -179,7 +179,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 2;
+  z-index: 999;
 }
 @media screen and (max-width: 767px) {
   .menu-container {
@@ -188,6 +188,7 @@ ul {
     top: 100%;
     left: 0;
     width: 100%;
+    height: 100vh;
     background-color: #ffffff;
     height: 796px;
   }
@@ -359,8 +360,8 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .aut-nav__link {
-    padding-top: 39px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-size: 14px;
     line-height: 1.14;
   }
@@ -434,6 +435,11 @@ ul {
 .mobil-list__link:not(:first-child) {
   padding-left: 10px;
 }
+@media screen and (max-width: 420px) {
+  .mobil-list__link {
+    font-size: 14px;
+  }
+}
 
 .mobil-list__link a {
   color: #2196f3;
@@ -448,6 +454,11 @@ ul {
           justify-content: center;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 479px) {
+  .button-list {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (max-width: 767px) {
   .button-list {
     display: -webkit-inline-box;
@@ -458,6 +469,12 @@ ul {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button-list {
+    margin-bottom: 30px;
   }
 }
 
@@ -494,6 +511,21 @@ ul {
   background-color: #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+@media screen and (min-width: 320px) {
+  .button-list__button {
+    padding: 6px 5px;
+  }
+}
+@media screen and (min-width: 380px) {
+  .button-list__button {
+    padding: 6px 14px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .button-list__button {
+    padding: 6px 22px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -559,7 +591,7 @@ ul {
 }
 @media screen and (max-width: 1199px) {
   .portfolio-card__thumb img {
-    width: 100%;
+    max-width: 100%;
   }
 }
 

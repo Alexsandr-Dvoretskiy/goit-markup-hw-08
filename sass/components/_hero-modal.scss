@@ -151,6 +151,11 @@ textarea {
     margin-left: 0;
     align-items: flex-end;
   }
+
+  @media screen and (max-width: 479px) {
+    align-items: center;
+    align-items: flex-end;
+  }
 }
 .checkbox__svg {
   display: inline-block;
@@ -167,6 +172,11 @@ textarea {
   .checkbox__text:focus & {
     color: $accent-color;
   }
+
+  @media screen and (max-width: 479px) {
+    width: 12px;
+    height: 12px;
+  }
 }
 
 .checkbox__text {
@@ -176,6 +186,10 @@ textarea {
     line-height: 1.16;
 
     letter-spacing: 0.03em;
+  }
+
+  @media screen and (max-width: 479px) {
+    font-size: 7px;
   }
 }
 
@@ -190,6 +204,9 @@ textarea {
     line-height: 1.16;
 
     letter-spacing: 0.03em;
+  }
+  @media screen and (max-width: 479px) {
+    font-size: 8px;
   }
 }
 
