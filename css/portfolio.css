@@ -167,16 +167,8 @@ ul {
   }
 }
 
-.menu-button .icon-cross {
-  display: none;
-}
-
 .menu-button.is-open .icon-cross {
   display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
 }
 
 .menu-container {
@@ -191,15 +183,6 @@ ul {
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #ffffff;
-  }
-  .menu-container.is-open {
-    display: block;
   }
 }
 
@@ -401,6 +384,11 @@ ul {
     margin-bottom: 64px;
   }
 }
+@media screen and (max-width: 479px) {
+  .aut-nav__link--mail {
+    font-size: 20px;
+  }
+}
 
 .aut-nav__svg {
   width: 17px;
@@ -432,7 +420,10 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 40px;
+  position: fixed;
+  bottom: 48px;
+  left: 40px;
+  right: 41px;
 }
 @media screen and (min-width: 768px) {
   .mobil-list {
