@@ -84,6 +84,9 @@
     line-height: 1.17;
     margin-bottom: 32px;
   }
+  @media screen and (max-width: 479px) {
+    font-size: 30px;
+  }
 }
 
 .aut-nav__link--mail {

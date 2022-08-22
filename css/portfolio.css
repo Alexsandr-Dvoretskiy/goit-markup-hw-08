@@ -92,6 +92,13 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
+@media screen and (max-width: 1199px) {
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    line-height: 1.17;
+  }
+}
 
 .logo {
   color: #2196f3;
@@ -137,8 +144,8 @@ ul {
 }
 
 .navigation {
-  position: relative;
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 .menu-button {
@@ -149,6 +156,7 @@ ul {
   padding: 0;
   border: none;
   background-color: transparent;
+  z-index: 999;
 }
 .menu-button:focus, .menu-button:hover {
   fill: #2196f3;
@@ -172,20 +180,19 @@ ul {
 }
 
 .menu-container {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 999;
+  z-index: 99;
 }
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -193,6 +200,7 @@ ul {
   }
   .menu-container.is-open {
     display: block;
+    background-color: burlywood;
   }
 }
 
@@ -212,6 +220,14 @@ ul {
   .site-nav {
     font-size: 40px;
     margin-bottom: 302px;
+    margin-left: 40px;
+    margin-top: 48px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .site-nav {
+    font-size: 40px;
+    margin-bottom: 100px;
     margin-left: 40px;
     margin-top: 48px;
   }
@@ -373,6 +389,11 @@ ul {
     margin-bottom: 32px;
   }
 }
+@media screen and (max-width: 479px) {
+  .aut-nav__link--tel {
+    font-size: 30px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .aut-nav__link--mail {
@@ -434,9 +455,9 @@ ul {
 .mobil-list__link:not(:first-child) {
   padding-left: 10px;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 479px) {
   .mobil-list__link {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -474,6 +495,11 @@ ul {
 @media screen and (min-width: 768px) {
   .button-list {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-list {
+    margin-bottom: 50px;
   }
 }
 
@@ -645,7 +671,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .card-content__size {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
   }
 }
 
