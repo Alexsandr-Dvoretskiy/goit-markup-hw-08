@@ -200,7 +200,6 @@ ul {
   }
   .menu-container.is-open {
     display: block;
-    background-color: burlywood;
   }
 }
 
@@ -600,7 +599,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .portfolio-card__item {
     width: calc((100% - 120px) / 3);
-    margin: 20px;
+    margin: 15px;
   }
 }
 
@@ -671,7 +670,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .card-content__size {
-    padding-bottom: 15px;
+    padding-bottom: 20px;
   }
 }
 

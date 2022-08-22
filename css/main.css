@@ -211,7 +211,6 @@ ul {
   }
   .menu-container.is-open {
     display: block;
-    background-color: burlywood;
   }
 }
 
