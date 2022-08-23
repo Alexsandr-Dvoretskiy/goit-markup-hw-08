@@ -306,6 +306,14 @@ ul {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     margin-left: 40px;
+    position: fixed;
+    bottom: 134px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .aut-nav {
+    position: fixed;
+    bottom: 100px;
   }
 }
 
