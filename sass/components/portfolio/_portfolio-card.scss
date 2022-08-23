@@ -1,6 +1,7 @@
 .portfolio-card {
   // display: flex;
   // flex-wrap: wrap;
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -11,6 +12,7 @@
 .portfolio-card__item {
   // width: calc((100% - 60px) / 3);
   display: flex;
+  // display: block;
   // margin-right: $card-set-gap;
   margin-bottom: $card-set-gap;
   transition: box-shadow $transition-time $transition-cubic;
@@ -20,29 +22,37 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-  @media screen and (min-width: 1200px) {
-    &:nth-last-child(-n + 3) {
-      margin-bottom: 0;
-    }
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-  }
+  // @media screen and (min-width: 1200px) {
+  //   &:nth-last-child(-n + 3) {
+  //     margin-bottom: 0;
+  //   }
+  //   &:nth-child(3n) {
+  //     margin-right: 0;
+  //   }
+  // }
 
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
+    margin-right: 0;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
 
+  // @media screen and (max-width: 1199px) {
+  //   width: calc((100% - 4 * 15px) / 2);
+  //   margin: 15px;
+  // }
+
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 8 * 15px) / 3);
+    // width: calc((100% - 8 * 15px) / 3);
     margin: 15px;
+    width: auto;
   }
   // width: calc((100% - 60px) / 3);
+  margin-right: 30px;
 }
 
 .portfolio-card__thumb {
